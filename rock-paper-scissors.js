@@ -1,3 +1,5 @@
+"use strict";
+
 var you;
 var yourScore = 0;
 var opponent;
@@ -10,7 +12,7 @@ window.onload = function() {
         //<img>
         let choice = document.createElement("img");
         choice.id = choices[i];
-        choice.source = choices[i] + ".png";
+        choice.src = "images/" + choices[i] + ".jpg";
         choice.addEventListener("click", selectChoice);
         document.getElementById("choices").append(choice);
     }
@@ -18,5 +20,39 @@ window.onload = function() {
 
 function selectChoice() {
     you = this.id;
-    document.getElementById("your-choice").src = you + ".p"
+    document.getElementById("user-choice").src = "images/" + you + ".jpg";
+
+    //random choice for opponent
+    opponent = choices[Math.floor(Math.random() * 3)];
+    document.getElementById("opponent-choice").src = "images/" + opponent + ".jpg";
+
+    //check for winner
+    if(you == "rock"){
+        if(opponent == "scissors"){
+            yourScore += 1;
+        }
+        if(opponent == "paper"){
+            opponentScore += 1;
+        }
+    }
+    else if (you == "scissors"){
+        if(opponent == "paper"){
+            yourScore += 1;
+        }
+        if(opponent == "rock"){
+            opponentScore += 1;
+        }
+    }
+    else {
+        if(opponent == "scissors"){
+            yourScore += 1;
+        }
+        if(opponent == "paper"){
+            opponentScore += 1;
+        }
+    }
+
+    document.getElementById("user-score").innerText = "You: " + yourScore;
+    document.getElementById("opponent-score").innerText = "Computer: " + opponentScore;
+
 }

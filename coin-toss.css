@@ -24,10 +24,56 @@
     margin-left: 10px;
     cursor: pointer; 
 }
+
+#enter-button, .enter-button{
+    width: 70px;
+    height: 50px;
+    background-color: #909090;
+    float: left;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 50%;
+    left: 50%;
+    cursor: pointer; 
+}
+
+#numSides{
+    margin-left: 45%;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.input-box{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.label-cat{
+    font-size: 15px;
+}
+
+#category-container{
+    
+    display: grid;
+    grid-template-columns: 150px 150px;
+    padding: 10px;
+    padding-left: 36%;
+
+}
+
+h3{
+    padding-top: 200px;
+    text-align: center;
+}
   
 body { 
     font-family: "Arial", sans-serif; 
-    display: flex; 
+    /*display: flex; */
     justify-content: center; 
     align-items: center; 
     height: 100vh; 
@@ -53,11 +99,9 @@ body {
 } 
   
 h1 { 
-    color: #32083d; 
-    font-size: 2.5rem; 
-    margin: 0 0 1rem; 
-    text-shadow: 2px 2px 4px
-        rgba(0, 0, 0, 0.2); 
+    color: #000000; 
+    font-size: 30px; 
+    padding: 100px;
 } 
   
 .coin { 
@@ -73,23 +117,10 @@ h1 {
     backface-visibility: hidden; 
 } 
   
-button { 
-    background-color: #728aff; 
-    color: #fff; 
-    border: none; 
-    padding: 10px 20px; 
-    border-radius: 10px; 
-    font-size: 1rem; 
-    cursor: pointer; 
-    transition: background-color 0.3s 
-            ease-in-out, 
-        transform 0.2s ease-in-out; 
-    width: 100%; 
-    margin-top: 20px; 
-} 
+
   
 button:hover { 
-    background-color: #a3b1f9;
+    background-color: #a7aab9;
     transform: scale(1.05); 
 } 
   

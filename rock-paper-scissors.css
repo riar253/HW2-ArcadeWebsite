@@ -21,21 +21,33 @@ body{
     cursor: pointer; 
 }
 
-button:hover { 
+#back-button:hover { 
     background-color: #a3b1f9;
     transform: scale(1.05); 
 } 
 
-#opponent-choice{
-    width: 240px;
-    height: 240px;
-    margin-top: 10px;
+h1, p{
+    font-size: 30px;
+    padding-top: 40px;
+    display: inline-block;
 }
 
-#your-choice{
-    width: 240px;
-    height: 240px;
+p{
+    color: #d49eab;
+}
+
+#opponent-choice{
+    width: 200px;
+    height: 200px;
     margin-top: 10px;
+    display: inline-block;
+}
+
+#user-choice{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 #choices {

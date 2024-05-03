@@ -7,6 +7,13 @@ body{
     text-align: center;
 }
 
+footer {
+    position: fixed;
+    font-size: 15px;
+}
+
+
+
 #back-button{
     width: 70px;
     height: 50px;
@@ -21,7 +28,46 @@ body{
     cursor: pointer; 
 }
 
+#enter-button{
+    width: 70px;
+    height: 50px;
+    background-color: #909090;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer; 
+}
+
 button:hover { 
     background-color: #a3b1f9;
     transform: scale(1.05); 
 } 
+
+#game-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.box {
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+  
+.filled-box {
+    border: 2px solid black;
+}
+  
+.row_of_boxes {
+    display: flex;
+}
